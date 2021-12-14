@@ -1,0 +1,9 @@
+----> 07:30:35 Tue Dec 14 olli@dell15 ~/CLionProjects/trickyCPP/homework7
+$ ./cmake-build-debug/bin/homework7 
+4
+4
+5
+Artemev Oleg 4.33333
+----> 07:31:17 Tue Dec 14 olli@dell15 ~/CLionProjects/trickyCPP/homework7
+$ 
+
