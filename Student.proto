@@ -1,0 +1,9 @@
+syntax="proto3";
+import "FullName.proto";
+package samplenamespace.student;
+
+message Student {
+    samplenamespace.fname.FullName name = 1;
+    float average_mark = 2;
+    repeated int32 marks = 3;
+}
