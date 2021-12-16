@@ -1,9 +1,9 @@
 syntax="proto3";
 
-package samplenamespace.fname;
-    message FullName{
-        string family = 1;
-        string name = 2;
-        optional string patronymic = 3;
-        //string patronymic = 3; // падает на delete() не зависимо от того опциональное ли это поле.
-    }
+package sample.ns;
+
+message FullName{
+    string family = 1;
+    string name = 2;
+    optional string patronymic = 3;
+}

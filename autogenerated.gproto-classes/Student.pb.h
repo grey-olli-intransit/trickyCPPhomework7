@@ -54,23 +54,23 @@ struct TableStruct_Student_2eproto {
   static const ::PROTOBUF_NAMESPACE_ID::uint32 offsets[];
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Student_2eproto;
-namespace samplenamespace {
-namespace student {
+namespace sample {
+namespace ns {
 class Student;
 struct StudentDefaultTypeInternal;
 extern StudentDefaultTypeInternal _Student_default_instance_;
-}  // namespace student
-}  // namespace samplenamespace
+}  // namespace ns
+}  // namespace sample
 PROTOBUF_NAMESPACE_OPEN
-template<> ::samplenamespace::student::Student* Arena::CreateMaybeMessage<::samplenamespace::student::Student>(Arena*);
+template<> ::sample::ns::Student* Arena::CreateMaybeMessage<::sample::ns::Student>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
-namespace samplenamespace {
-namespace student {
+namespace sample {
+namespace ns {
 
 // ===================================================================
 
 class Student final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:samplenamespace.student.Student) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:sample.ns.Student) */ {
  public:
   inline Student() : Student(nullptr) {}
   ~Student() override;
@@ -161,7 +161,7 @@ class Student final :
   void InternalSwap(Student* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "samplenamespace.student.Student";
+    return "sample.ns.Student";
   }
   protected:
   explicit Student(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -203,23 +203,23 @@ class Student final :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_marks();
 
-  // .samplenamespace.fname.FullName name = 1;
+  // .sample.ns.FullName name = 1;
   bool has_name() const;
   private:
   bool _internal_has_name() const;
   public:
   void clear_name();
-  const ::samplenamespace::fname::FullName& name() const;
-  PROTOBUF_FUTURE_MUST_USE_RESULT ::samplenamespace::fname::FullName* release_name();
-  ::samplenamespace::fname::FullName* mutable_name();
-  void set_allocated_name(::samplenamespace::fname::FullName* name);
+  const ::sample::ns::FullName& name() const;
+  PROTOBUF_FUTURE_MUST_USE_RESULT ::sample::ns::FullName* release_name();
+  ::sample::ns::FullName* mutable_name();
+  void set_allocated_name(::sample::ns::FullName* name);
   private:
-  const ::samplenamespace::fname::FullName& _internal_name() const;
-  ::samplenamespace::fname::FullName* _internal_mutable_name();
+  const ::sample::ns::FullName& _internal_name() const;
+  ::sample::ns::FullName* _internal_mutable_name();
   public:
   void unsafe_arena_set_allocated_name(
-      ::samplenamespace::fname::FullName* name);
-  ::samplenamespace::fname::FullName* unsafe_arena_release_name();
+      ::sample::ns::FullName* name);
+  ::sample::ns::FullName* unsafe_arena_release_name();
 
   // float average_mark = 2;
   void clear_average_mark();
@@ -230,7 +230,7 @@ class Student final :
   void _internal_set_average_mark(float value);
   public:
 
-  // @@protoc_insertion_point(class_scope:samplenamespace.student.Student)
+  // @@protoc_insertion_point(class_scope:sample.ns.Student)
  private:
   class _Internal;
 
@@ -239,7 +239,7 @@ class Student final :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > marks_;
   mutable std::atomic<int> _marks_cached_byte_size_;
-  ::samplenamespace::fname::FullName* name_;
+  ::sample::ns::FullName* name_;
   float average_mark_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Student_2eproto;
@@ -255,24 +255,24 @@ class Student final :
 #endif  // __GNUC__
 // Student
 
-// .samplenamespace.fname.FullName name = 1;
+// .sample.ns.FullName name = 1;
 inline bool Student::_internal_has_name() const {
   return this != internal_default_instance() && name_ != nullptr;
 }
 inline bool Student::has_name() const {
   return _internal_has_name();
 }
-inline const ::samplenamespace::fname::FullName& Student::_internal_name() const {
-  const ::samplenamespace::fname::FullName* p = name_;
-  return p != nullptr ? *p : reinterpret_cast<const ::samplenamespace::fname::FullName&>(
-      ::samplenamespace::fname::_FullName_default_instance_);
+inline const ::sample::ns::FullName& Student::_internal_name() const {
+  const ::sample::ns::FullName* p = name_;
+  return p != nullptr ? *p : reinterpret_cast<const ::sample::ns::FullName&>(
+      ::sample::ns::_FullName_default_instance_);
 }
-inline const ::samplenamespace::fname::FullName& Student::name() const {
-  // @@protoc_insertion_point(field_get:samplenamespace.student.Student.name)
+inline const ::sample::ns::FullName& Student::name() const {
+  // @@protoc_insertion_point(field_get:sample.ns.Student.name)
   return _internal_name();
 }
 inline void Student::unsafe_arena_set_allocated_name(
-    ::samplenamespace::fname::FullName* name) {
+    ::sample::ns::FullName* name) {
   if (GetArenaForAllocation() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(name_);
   }
@@ -282,37 +282,37 @@ inline void Student::unsafe_arena_set_allocated_name(
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:samplenamespace.student.Student.name)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:sample.ns.Student.name)
 }
-inline ::samplenamespace::fname::FullName* Student::release_name() {
+inline ::sample::ns::FullName* Student::release_name() {
   
-  ::samplenamespace::fname::FullName* temp = name_;
+  ::sample::ns::FullName* temp = name_;
   name_ = nullptr;
   if (GetArenaForAllocation() != nullptr) {
     temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
   return temp;
 }
-inline ::samplenamespace::fname::FullName* Student::unsafe_arena_release_name() {
-  // @@protoc_insertion_point(field_release:samplenamespace.student.Student.name)
+inline ::sample::ns::FullName* Student::unsafe_arena_release_name() {
+  // @@protoc_insertion_point(field_release:sample.ns.Student.name)
   
-  ::samplenamespace::fname::FullName* temp = name_;
+  ::sample::ns::FullName* temp = name_;
   name_ = nullptr;
   return temp;
 }
-inline ::samplenamespace::fname::FullName* Student::_internal_mutable_name() {
+inline ::sample::ns::FullName* Student::_internal_mutable_name() {
   
   if (name_ == nullptr) {
-    auto* p = CreateMaybeMessage<::samplenamespace::fname::FullName>(GetArenaForAllocation());
+    auto* p = CreateMaybeMessage<::sample::ns::FullName>(GetArenaForAllocation());
     name_ = p;
   }
   return name_;
 }
-inline ::samplenamespace::fname::FullName* Student::mutable_name() {
-  // @@protoc_insertion_point(field_mutable:samplenamespace.student.Student.name)
+inline ::sample::ns::FullName* Student::mutable_name() {
+  // @@protoc_insertion_point(field_mutable:sample.ns.Student.name)
   return _internal_mutable_name();
 }
-inline void Student::set_allocated_name(::samplenamespace::fname::FullName* name) {
+inline void Student::set_allocated_name(::sample::ns::FullName* name) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   if (message_arena == nullptr) {
     delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(name_);
@@ -331,7 +331,7 @@ inline void Student::set_allocated_name(::samplenamespace::fname::FullName* name
     
   }
   name_ = name;
-  // @@protoc_insertion_point(field_set_allocated:samplenamespace.student.Student.name)
+  // @@protoc_insertion_point(field_set_allocated:sample.ns.Student.name)
 }
 
 // float average_mark = 2;
@@ -342,7 +342,7 @@ inline float Student::_internal_average_mark() const {
   return average_mark_;
 }
 inline float Student::average_mark() const {
-  // @@protoc_insertion_point(field_get:samplenamespace.student.Student.average_mark)
+  // @@protoc_insertion_point(field_get:sample.ns.Student.average_mark)
   return _internal_average_mark();
 }
 inline void Student::_internal_set_average_mark(float value) {
@@ -351,7 +351,7 @@ inline void Student::_internal_set_average_mark(float value) {
 }
 inline void Student::set_average_mark(float value) {
   _internal_set_average_mark(value);
-  // @@protoc_insertion_point(field_set:samplenamespace.student.Student.average_mark)
+  // @@protoc_insertion_point(field_set:sample.ns.Student.average_mark)
 }
 
 // repeated int32 marks = 3;
@@ -368,19 +368,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 Student::_internal_marks(int index) const 
   return marks_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 Student::marks(int index) const {
-  // @@protoc_insertion_point(field_get:samplenamespace.student.Student.marks)
+  // @@protoc_insertion_point(field_get:sample.ns.Student.marks)
   return _internal_marks(index);
 }
 inline void Student::set_marks(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   marks_.Set(index, value);
-  // @@protoc_insertion_point(field_set:samplenamespace.student.Student.marks)
+  // @@protoc_insertion_point(field_set:sample.ns.Student.marks)
 }
 inline void Student::_internal_add_marks(::PROTOBUF_NAMESPACE_ID::int32 value) {
   marks_.Add(value);
 }
 inline void Student::add_marks(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_marks(value);
-  // @@protoc_insertion_point(field_add:samplenamespace.student.Student.marks)
+  // @@protoc_insertion_point(field_add:sample.ns.Student.marks)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 Student::_internal_marks() const {
@@ -388,7 +388,7 @@ Student::_internal_marks() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 Student::marks() const {
-  // @@protoc_insertion_point(field_list:samplenamespace.student.Student.marks)
+  // @@protoc_insertion_point(field_list:sample.ns.Student.marks)
   return _internal_marks();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -397,7 +397,7 @@ Student::_internal_mutable_marks() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 Student::mutable_marks() {
-  // @@protoc_insertion_point(field_mutable_list:samplenamespace.student.Student.marks)
+  // @@protoc_insertion_point(field_mutable_list:sample.ns.Student.marks)
   return _internal_mutable_marks();
 }
 
@@ -407,8 +407,8 @@ Student::mutable_marks() {
 
 // @@protoc_insertion_point(namespace_scope)
 
-}  // namespace student
-}  // namespace samplenamespace
+}  // namespace ns
+}  // namespace sample
 
 // @@protoc_insertion_point(global_scope)
 

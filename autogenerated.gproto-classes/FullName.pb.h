@@ -53,23 +53,23 @@ struct TableStruct_FullName_2eproto {
   static const ::PROTOBUF_NAMESPACE_ID::uint32 offsets[];
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_FullName_2eproto;
-namespace samplenamespace {
-namespace fname {
+namespace sample {
+namespace ns {
 class FullName;
 struct FullNameDefaultTypeInternal;
 extern FullNameDefaultTypeInternal _FullName_default_instance_;
-}  // namespace fname
-}  // namespace samplenamespace
+}  // namespace ns
+}  // namespace sample
 PROTOBUF_NAMESPACE_OPEN
-template<> ::samplenamespace::fname::FullName* Arena::CreateMaybeMessage<::samplenamespace::fname::FullName>(Arena*);
+template<> ::sample::ns::FullName* Arena::CreateMaybeMessage<::sample::ns::FullName>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
-namespace samplenamespace {
-namespace fname {
+namespace sample {
+namespace ns {
 
 // ===================================================================
 
 class FullName final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:samplenamespace.fname.FullName) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:sample.ns.FullName) */ {
  public:
   inline FullName() : FullName(nullptr) {}
   ~FullName() override;
@@ -160,7 +160,7 @@ class FullName final :
   void InternalSwap(FullName* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "samplenamespace.fname.FullName";
+    return "sample.ns.FullName";
   }
   protected:
   explicit FullName(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -226,7 +226,7 @@ class FullName final :
   std::string* _internal_mutable_patronymic();
   public:
 
-  // @@protoc_insertion_point(class_scope:samplenamespace.fname.FullName)
+  // @@protoc_insertion_point(class_scope:sample.ns.FullName)
  private:
   class _Internal;
 
@@ -256,7 +256,7 @@ inline void FullName::clear_family() {
   family_.ClearToEmpty();
 }
 inline const std::string& FullName::family() const {
-  // @@protoc_insertion_point(field_get:samplenamespace.fname.FullName.family)
+  // @@protoc_insertion_point(field_get:sample.ns.FullName.family)
   return _internal_family();
 }
 template <typename ArgT0, typename... ArgT>
@@ -264,10 +264,10 @@ inline PROTOBUF_ALWAYS_INLINE
 void FullName::set_family(ArgT0&& arg0, ArgT... args) {
  
  family_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:samplenamespace.fname.FullName.family)
+  // @@protoc_insertion_point(field_set:sample.ns.FullName.family)
 }
 inline std::string* FullName::mutable_family() {
-  // @@protoc_insertion_point(field_mutable:samplenamespace.fname.FullName.family)
+  // @@protoc_insertion_point(field_mutable:sample.ns.FullName.family)
   return _internal_mutable_family();
 }
 inline const std::string& FullName::_internal_family() const {
@@ -282,7 +282,7 @@ inline std::string* FullName::_internal_mutable_family() {
   return family_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
 }
 inline std::string* FullName::release_family() {
-  // @@protoc_insertion_point(field_release:samplenamespace.fname.FullName.family)
+  // @@protoc_insertion_point(field_release:sample.ns.FullName.family)
   return family_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
 }
 inline void FullName::set_allocated_family(std::string* family) {
@@ -293,7 +293,7 @@ inline void FullName::set_allocated_family(std::string* family) {
   }
   family_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), family,
       GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set_allocated:samplenamespace.fname.FullName.family)
+  // @@protoc_insertion_point(field_set_allocated:sample.ns.FullName.family)
 }
 
 // string name = 2;
@@ -301,7 +301,7 @@ inline void FullName::clear_name() {
   name_.ClearToEmpty();
 }
 inline const std::string& FullName::name() const {
-  // @@protoc_insertion_point(field_get:samplenamespace.fname.FullName.name)
+  // @@protoc_insertion_point(field_get:sample.ns.FullName.name)
   return _internal_name();
 }
 template <typename ArgT0, typename... ArgT>
@@ -309,10 +309,10 @@ inline PROTOBUF_ALWAYS_INLINE
 void FullName::set_name(ArgT0&& arg0, ArgT... args) {
  
  name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:samplenamespace.fname.FullName.name)
+  // @@protoc_insertion_point(field_set:sample.ns.FullName.name)
 }
 inline std::string* FullName::mutable_name() {
-  // @@protoc_insertion_point(field_mutable:samplenamespace.fname.FullName.name)
+  // @@protoc_insertion_point(field_mutable:sample.ns.FullName.name)
   return _internal_mutable_name();
 }
 inline const std::string& FullName::_internal_name() const {
@@ -327,7 +327,7 @@ inline std::string* FullName::_internal_mutable_name() {
   return name_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
 }
 inline std::string* FullName::release_name() {
-  // @@protoc_insertion_point(field_release:samplenamespace.fname.FullName.name)
+  // @@protoc_insertion_point(field_release:sample.ns.FullName.name)
   return name_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
 }
 inline void FullName::set_allocated_name(std::string* name) {
@@ -338,7 +338,7 @@ inline void FullName::set_allocated_name(std::string* name) {
   }
   name_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), name,
       GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set_allocated:samplenamespace.fname.FullName.name)
+  // @@protoc_insertion_point(field_set_allocated:sample.ns.FullName.name)
 }
 
 // optional string patronymic = 3;
@@ -354,7 +354,7 @@ inline void FullName::clear_patronymic() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline const std::string& FullName::patronymic() const {
-  // @@protoc_insertion_point(field_get:samplenamespace.fname.FullName.patronymic)
+  // @@protoc_insertion_point(field_get:sample.ns.FullName.patronymic)
   return _internal_patronymic();
 }
 template <typename ArgT0, typename... ArgT>
@@ -362,10 +362,10 @@ inline PROTOBUF_ALWAYS_INLINE
 void FullName::set_patronymic(ArgT0&& arg0, ArgT... args) {
  _has_bits_[0] |= 0x00000001u;
  patronymic_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:samplenamespace.fname.FullName.patronymic)
+  // @@protoc_insertion_point(field_set:sample.ns.FullName.patronymic)
 }
 inline std::string* FullName::mutable_patronymic() {
-  // @@protoc_insertion_point(field_mutable:samplenamespace.fname.FullName.patronymic)
+  // @@protoc_insertion_point(field_mutable:sample.ns.FullName.patronymic)
   return _internal_mutable_patronymic();
 }
 inline const std::string& FullName::_internal_patronymic() const {
@@ -380,7 +380,7 @@ inline std::string* FullName::_internal_mutable_patronymic() {
   return patronymic_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
 }
 inline std::string* FullName::release_patronymic() {
-  // @@protoc_insertion_point(field_release:samplenamespace.fname.FullName.patronymic)
+  // @@protoc_insertion_point(field_release:sample.ns.FullName.patronymic)
   if (!_internal_has_patronymic()) {
     return nullptr;
   }
@@ -395,7 +395,7 @@ inline void FullName::set_allocated_patronymic(std::string* patronymic) {
   }
   patronymic_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), patronymic,
       GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set_allocated:samplenamespace.fname.FullName.patronymic)
+  // @@protoc_insertion_point(field_set_allocated:sample.ns.FullName.patronymic)
 }
 
 #ifdef __GNUC__
@@ -404,8 +404,8 @@ inline void FullName::set_allocated_patronymic(std::string* patronymic) {
 
 // @@protoc_insertion_point(namespace_scope)
 
-}  // namespace fname
-}  // namespace samplenamespace
+}  // namespace ns
+}  // namespace sample
 
 // @@protoc_insertion_point(global_scope)
 

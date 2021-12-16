@@ -16,8 +16,8 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
-namespace samplenamespace {
-namespace fname {
+namespace sample {
+namespace ns {
 constexpr FullName::FullName(
   ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
   : family_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
@@ -32,42 +32,41 @@ struct FullNameDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT FullNameDefaultTypeInternal _FullName_default_instance_;
-}  // namespace fname
-}  // namespace samplenamespace
+}  // namespace ns
+}  // namespace sample
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_FullName_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_FullName_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_FullName_2eproto = nullptr;
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_FullName_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  PROTOBUF_FIELD_OFFSET(::samplenamespace::fname::FullName, _has_bits_),
-  PROTOBUF_FIELD_OFFSET(::samplenamespace::fname::FullName, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::sample::ns::FullName, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::sample::ns::FullName, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::samplenamespace::fname::FullName, family_),
-  PROTOBUF_FIELD_OFFSET(::samplenamespace::fname::FullName, name_),
-  PROTOBUF_FIELD_OFFSET(::samplenamespace::fname::FullName, patronymic_),
+  PROTOBUF_FIELD_OFFSET(::sample::ns::FullName, family_),
+  PROTOBUF_FIELD_OFFSET(::sample::ns::FullName, name_),
+  PROTOBUF_FIELD_OFFSET(::sample::ns::FullName, patronymic_),
   ~0u,
   ~0u,
   0,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 8, sizeof(::samplenamespace::fname::FullName)},
+  { 0, 8, sizeof(::sample::ns::FullName)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::samplenamespace::fname::_FullName_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::sample::ns::_FullName_default_instance_),
 };
 
 const char descriptor_table_protodef_FullName_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\016FullName.proto\022\025samplenamespace.fname\""
-  "P\n\010FullName\022\016\n\006family\030\001 \001(\t\022\014\n\004name\030\002 \001("
-  "\t\022\027\n\npatronymic\030\003 \001(\tH\000\210\001\001B\r\n\013_patronymi"
-  "cb\006proto3"
+  "\n\016FullName.proto\022\tsample.ns\"P\n\010FullName\022"
+  "\016\n\006family\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\027\n\npatrony"
+  "mic\030\003 \001(\tH\000\210\001\001B\r\n\013_patronymicb\006proto3"
   ;
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_FullName_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_FullName_2eproto = {
-  false, false, 129, descriptor_table_protodef_FullName_2eproto, "FullName.proto", 
+  false, false, 117, descriptor_table_protodef_FullName_2eproto, "FullName.proto", 
   &descriptor_table_FullName_2eproto_once, nullptr, 0, 1,
   schemas, file_default_instances, TableStruct_FullName_2eproto::offsets,
   file_level_metadata_FullName_2eproto, file_level_enum_descriptors_FullName_2eproto, file_level_service_descriptors_FullName_2eproto,
@@ -78,8 +77,8 @@ PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable
 
 // Force running AddDescriptors() at dynamic initialization time.
 PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_FullName_2eproto(&descriptor_table_FullName_2eproto);
-namespace samplenamespace {
-namespace fname {
+namespace sample {
+namespace ns {
 
 // ===================================================================
 
@@ -95,7 +94,7 @@ FullName::FullName(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:samplenamespace.fname.FullName)
+  // @@protoc_insertion_point(arena_constructor:sample.ns.FullName)
 }
 FullName::FullName(const FullName& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -116,7 +115,7 @@ FullName::FullName(const FullName& from)
     patronymic_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_patronymic(), 
       GetArenaForAllocation());
   }
-  // @@protoc_insertion_point(copy_constructor:samplenamespace.fname.FullName)
+  // @@protoc_insertion_point(copy_constructor:sample.ns.FullName)
 }
 
 void FullName::SharedCtor() {
@@ -126,7 +125,7 @@ patronymic_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringA
 }
 
 FullName::~FullName() {
-  // @@protoc_insertion_point(destructor:samplenamespace.fname.FullName)
+  // @@protoc_insertion_point(destructor:sample.ns.FullName)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -149,7 +148,7 @@ void FullName::SetCachedSize(int size) const {
 }
 
 void FullName::Clear() {
-// @@protoc_insertion_point(message_clear_start:samplenamespace.fname.FullName)
+// @@protoc_insertion_point(message_clear_start:sample.ns.FullName)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -176,7 +175,7 @@ const char* FullName::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           auto str = _internal_mutable_family();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "samplenamespace.fname.FullName.family"));
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "sample.ns.FullName.family"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -185,7 +184,7 @@ const char* FullName::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           auto str = _internal_mutable_name();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "samplenamespace.fname.FullName.name"));
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "sample.ns.FullName.name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -194,7 +193,7 @@ const char* FullName::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           auto str = _internal_mutable_patronymic();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "samplenamespace.fname.FullName.patronymic"));
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "sample.ns.FullName.patronymic"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -224,7 +223,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* FullName::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:samplenamespace.fname.FullName)
+  // @@protoc_insertion_point(serialize_to_array_start:sample.ns.FullName)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -233,7 +232,7 @@ failure:
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_family().data(), static_cast<int>(this->_internal_family().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "samplenamespace.fname.FullName.family");
+      "sample.ns.FullName.family");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_family(), target);
   }
@@ -243,7 +242,7 @@ failure:
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "samplenamespace.fname.FullName.name");
+      "sample.ns.FullName.name");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_name(), target);
   }
@@ -253,7 +252,7 @@ failure:
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_patronymic().data(), static_cast<int>(this->_internal_patronymic().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "samplenamespace.fname.FullName.patronymic");
+      "sample.ns.FullName.patronymic");
     target = stream->WriteStringMaybeAliased(
         3, this->_internal_patronymic(), target);
   }
@@ -262,12 +261,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:samplenamespace.fname.FullName)
+  // @@protoc_insertion_point(serialize_to_array_end:sample.ns.FullName)
   return target;
 }
 
 size_t FullName::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:samplenamespace.fname.FullName)
+// @@protoc_insertion_point(message_byte_size_start:sample.ns.FullName)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -306,22 +305,22 @@ size_t FullName::ByteSizeLong() const {
 }
 
 void FullName::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:samplenamespace.fname.FullName)
+// @@protoc_insertion_point(generalized_merge_from_start:sample.ns.FullName)
   GOOGLE_DCHECK_NE(&from, this);
   const FullName* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<FullName>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:samplenamespace.fname.FullName)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:sample.ns.FullName)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:samplenamespace.fname.FullName)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:sample.ns.FullName)
     MergeFrom(*source);
   }
 }
 
 void FullName::MergeFrom(const FullName& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:samplenamespace.fname.FullName)
+// @@protoc_insertion_point(class_specific_merge_from_start:sample.ns.FullName)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -339,14 +338,14 @@ void FullName::MergeFrom(const FullName& from) {
 }
 
 void FullName::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:samplenamespace.fname.FullName)
+// @@protoc_insertion_point(generalized_copy_from_start:sample.ns.FullName)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void FullName::CopyFrom(const FullName& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:samplenamespace.fname.FullName)
+// @@protoc_insertion_point(class_specific_copy_from_start:sample.ns.FullName)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -384,11 +383,11 @@ void FullName::InternalSwap(FullName* other) {
 }
 
 // @@protoc_insertion_point(namespace_scope)
-}  // namespace fname
-}  // namespace samplenamespace
+}  // namespace ns
+}  // namespace sample
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::samplenamespace::fname::FullName* Arena::CreateMaybeMessage< ::samplenamespace::fname::FullName >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::samplenamespace::fname::FullName >(arena);
+template<> PROTOBUF_NOINLINE ::sample::ns::FullName* Arena::CreateMaybeMessage< ::sample::ns::FullName >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::sample::ns::FullName >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

@@ -16,8 +16,8 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
-namespace samplenamespace {
-namespace studentgroup {
+namespace sample {
+namespace ns {
 constexpr StudentsGroup::StudentsGroup(
   ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
   : students_(){}
@@ -30,40 +30,39 @@ struct StudentsGroupDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT StudentsGroupDefaultTypeInternal _StudentsGroup_default_instance_;
-}  // namespace studentgroup
-}  // namespace samplenamespace
+}  // namespace ns
+}  // namespace sample
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_StudentsGroup_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_StudentsGroup_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_StudentsGroup_2eproto = nullptr;
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_StudentsGroup_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::samplenamespace::studentgroup::StudentsGroup, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::sample::ns::StudentsGroup, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::samplenamespace::studentgroup::StudentsGroup, students_),
+  PROTOBUF_FIELD_OFFSET(::sample::ns::StudentsGroup, students_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::samplenamespace::studentgroup::StudentsGroup)},
+  { 0, -1, sizeof(::sample::ns::StudentsGroup)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::samplenamespace::studentgroup::_StudentsGroup_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::sample::ns::_StudentsGroup_default_instance_),
 };
 
 const char descriptor_table_protodef_StudentsGroup_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\023StudentsGroup.proto\022\034samplenamespace.s"
-  "tudentgroup\032\rStudent.proto\"C\n\rStudentsGr"
-  "oup\0222\n\010students\030\001 \003(\0132 .samplenamespace."
-  "student.Studentb\006proto3"
+  "\n\023StudentsGroup.proto\022\tsample.ns\032\rStuden"
+  "t.proto\"5\n\rStudentsGroup\022$\n\010students\030\001 \003"
+  "(\0132\022.sample.ns.Studentb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_StudentsGroup_2eproto_deps[1] = {
   &::descriptor_table_Student_2eproto,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_StudentsGroup_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_StudentsGroup_2eproto = {
-  false, false, 143, descriptor_table_protodef_StudentsGroup_2eproto, "StudentsGroup.proto", 
+  false, false, 110, descriptor_table_protodef_StudentsGroup_2eproto, "StudentsGroup.proto", 
   &descriptor_table_StudentsGroup_2eproto_once, descriptor_table_StudentsGroup_2eproto_deps, 1, 1,
   schemas, file_default_instances, TableStruct_StudentsGroup_2eproto::offsets,
   file_level_metadata_StudentsGroup_2eproto, file_level_enum_descriptors_StudentsGroup_2eproto, file_level_service_descriptors_StudentsGroup_2eproto,
@@ -74,8 +73,8 @@ PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable
 
 // Force running AddDescriptors() at dynamic initialization time.
 PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_StudentsGroup_2eproto(&descriptor_table_StudentsGroup_2eproto);
-namespace samplenamespace {
-namespace studentgroup {
+namespace sample {
+namespace ns {
 
 // ===================================================================
 
@@ -91,20 +90,20 @@ StudentsGroup::StudentsGroup(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   students_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:samplenamespace.studentgroup.StudentsGroup)
+  // @@protoc_insertion_point(arena_constructor:sample.ns.StudentsGroup)
 }
 StudentsGroup::StudentsGroup(const StudentsGroup& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       students_(from.students_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:samplenamespace.studentgroup.StudentsGroup)
+  // @@protoc_insertion_point(copy_constructor:sample.ns.StudentsGroup)
 }
 
 void StudentsGroup::SharedCtor() {
 }
 
 StudentsGroup::~StudentsGroup() {
-  // @@protoc_insertion_point(destructor:samplenamespace.studentgroup.StudentsGroup)
+  // @@protoc_insertion_point(destructor:sample.ns.StudentsGroup)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -124,7 +123,7 @@ void StudentsGroup::SetCachedSize(int size) const {
 }
 
 void StudentsGroup::Clear() {
-// @@protoc_insertion_point(message_clear_start:samplenamespace.studentgroup.StudentsGroup)
+// @@protoc_insertion_point(message_clear_start:sample.ns.StudentsGroup)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -139,7 +138,7 @@ const char* StudentsGroup::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // repeated .samplenamespace.student.Student students = 1;
+      // repeated .sample.ns.Student students = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr -= 1;
@@ -176,11 +175,11 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* StudentsGroup::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:samplenamespace.studentgroup.StudentsGroup)
+  // @@protoc_insertion_point(serialize_to_array_start:sample.ns.StudentsGroup)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .samplenamespace.student.Student students = 1;
+  // repeated .sample.ns.Student students = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_students_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
@@ -192,19 +191,19 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:samplenamespace.studentgroup.StudentsGroup)
+  // @@protoc_insertion_point(serialize_to_array_end:sample.ns.StudentsGroup)
   return target;
 }
 
 size_t StudentsGroup::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:samplenamespace.studentgroup.StudentsGroup)
+// @@protoc_insertion_point(message_byte_size_start:sample.ns.StudentsGroup)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .samplenamespace.student.Student students = 1;
+  // repeated .sample.ns.Student students = 1;
   total_size += 1UL * this->_internal_students_size();
   for (const auto& msg : this->students_) {
     total_size +=
@@ -221,22 +220,22 @@ size_t StudentsGroup::ByteSizeLong() const {
 }
 
 void StudentsGroup::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:samplenamespace.studentgroup.StudentsGroup)
+// @@protoc_insertion_point(generalized_merge_from_start:sample.ns.StudentsGroup)
   GOOGLE_DCHECK_NE(&from, this);
   const StudentsGroup* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<StudentsGroup>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:samplenamespace.studentgroup.StudentsGroup)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:sample.ns.StudentsGroup)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:samplenamespace.studentgroup.StudentsGroup)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:sample.ns.StudentsGroup)
     MergeFrom(*source);
   }
 }
 
 void StudentsGroup::MergeFrom(const StudentsGroup& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:samplenamespace.studentgroup.StudentsGroup)
+// @@protoc_insertion_point(class_specific_merge_from_start:sample.ns.StudentsGroup)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -246,14 +245,14 @@ void StudentsGroup::MergeFrom(const StudentsGroup& from) {
 }
 
 void StudentsGroup::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:samplenamespace.studentgroup.StudentsGroup)
+// @@protoc_insertion_point(generalized_copy_from_start:sample.ns.StudentsGroup)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void StudentsGroup::CopyFrom(const StudentsGroup& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:samplenamespace.studentgroup.StudentsGroup)
+// @@protoc_insertion_point(class_specific_copy_from_start:sample.ns.StudentsGroup)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -276,11 +275,11 @@ void StudentsGroup::InternalSwap(StudentsGroup* other) {
 }
 
 // @@protoc_insertion_point(namespace_scope)
-}  // namespace studentgroup
-}  // namespace samplenamespace
+}  // namespace ns
+}  // namespace sample
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::samplenamespace::studentgroup::StudentsGroup* Arena::CreateMaybeMessage< ::samplenamespace::studentgroup::StudentsGroup >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::samplenamespace::studentgroup::StudentsGroup >(arena);
+template<> PROTOBUF_NOINLINE ::sample::ns::StudentsGroup* Arena::CreateMaybeMessage< ::sample::ns::StudentsGroup >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::sample::ns::StudentsGroup >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

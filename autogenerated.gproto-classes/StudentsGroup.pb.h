@@ -54,23 +54,23 @@ struct TableStruct_StudentsGroup_2eproto {
   static const ::PROTOBUF_NAMESPACE_ID::uint32 offsets[];
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_StudentsGroup_2eproto;
-namespace samplenamespace {
-namespace studentgroup {
+namespace sample {
+namespace ns {
 class StudentsGroup;
 struct StudentsGroupDefaultTypeInternal;
 extern StudentsGroupDefaultTypeInternal _StudentsGroup_default_instance_;
-}  // namespace studentgroup
-}  // namespace samplenamespace
+}  // namespace ns
+}  // namespace sample
 PROTOBUF_NAMESPACE_OPEN
-template<> ::samplenamespace::studentgroup::StudentsGroup* Arena::CreateMaybeMessage<::samplenamespace::studentgroup::StudentsGroup>(Arena*);
+template<> ::sample::ns::StudentsGroup* Arena::CreateMaybeMessage<::sample::ns::StudentsGroup>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
-namespace samplenamespace {
-namespace studentgroup {
+namespace sample {
+namespace ns {
 
 // ===================================================================
 
 class StudentsGroup final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:samplenamespace.studentgroup.StudentsGroup) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:sample.ns.StudentsGroup) */ {
  public:
   inline StudentsGroup() : StudentsGroup(nullptr) {}
   ~StudentsGroup() override;
@@ -161,7 +161,7 @@ class StudentsGroup final :
   void InternalSwap(StudentsGroup* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "samplenamespace.studentgroup.StudentsGroup";
+    return "sample.ns.StudentsGroup";
   }
   protected:
   explicit StudentsGroup(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -179,32 +179,32 @@ class StudentsGroup final :
   enum : int {
     kStudentsFieldNumber = 1,
   };
-  // repeated .samplenamespace.student.Student students = 1;
+  // repeated .sample.ns.Student students = 1;
   int students_size() const;
   private:
   int _internal_students_size() const;
   public:
   void clear_students();
-  ::samplenamespace::student::Student* mutable_students(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::samplenamespace::student::Student >*
+  ::sample::ns::Student* mutable_students(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::sample::ns::Student >*
       mutable_students();
   private:
-  const ::samplenamespace::student::Student& _internal_students(int index) const;
-  ::samplenamespace::student::Student* _internal_add_students();
+  const ::sample::ns::Student& _internal_students(int index) const;
+  ::sample::ns::Student* _internal_add_students();
   public:
-  const ::samplenamespace::student::Student& students(int index) const;
-  ::samplenamespace::student::Student* add_students();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::samplenamespace::student::Student >&
+  const ::sample::ns::Student& students(int index) const;
+  ::sample::ns::Student* add_students();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::sample::ns::Student >&
       students() const;
 
-  // @@protoc_insertion_point(class_scope:samplenamespace.studentgroup.StudentsGroup)
+  // @@protoc_insertion_point(class_scope:sample.ns.StudentsGroup)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::samplenamespace::student::Student > students_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::sample::ns::Student > students_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_StudentsGroup_2eproto;
 };
@@ -219,39 +219,39 @@ class StudentsGroup final :
 #endif  // __GNUC__
 // StudentsGroup
 
-// repeated .samplenamespace.student.Student students = 1;
+// repeated .sample.ns.Student students = 1;
 inline int StudentsGroup::_internal_students_size() const {
   return students_.size();
 }
 inline int StudentsGroup::students_size() const {
   return _internal_students_size();
 }
-inline ::samplenamespace::student::Student* StudentsGroup::mutable_students(int index) {
-  // @@protoc_insertion_point(field_mutable:samplenamespace.studentgroup.StudentsGroup.students)
+inline ::sample::ns::Student* StudentsGroup::mutable_students(int index) {
+  // @@protoc_insertion_point(field_mutable:sample.ns.StudentsGroup.students)
   return students_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::samplenamespace::student::Student >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::sample::ns::Student >*
 StudentsGroup::mutable_students() {
-  // @@protoc_insertion_point(field_mutable_list:samplenamespace.studentgroup.StudentsGroup.students)
+  // @@protoc_insertion_point(field_mutable_list:sample.ns.StudentsGroup.students)
   return &students_;
 }
-inline const ::samplenamespace::student::Student& StudentsGroup::_internal_students(int index) const {
+inline const ::sample::ns::Student& StudentsGroup::_internal_students(int index) const {
   return students_.Get(index);
 }
-inline const ::samplenamespace::student::Student& StudentsGroup::students(int index) const {
-  // @@protoc_insertion_point(field_get:samplenamespace.studentgroup.StudentsGroup.students)
+inline const ::sample::ns::Student& StudentsGroup::students(int index) const {
+  // @@protoc_insertion_point(field_get:sample.ns.StudentsGroup.students)
   return _internal_students(index);
 }
-inline ::samplenamespace::student::Student* StudentsGroup::_internal_add_students() {
+inline ::sample::ns::Student* StudentsGroup::_internal_add_students() {
   return students_.Add();
 }
-inline ::samplenamespace::student::Student* StudentsGroup::add_students() {
-  // @@protoc_insertion_point(field_add:samplenamespace.studentgroup.StudentsGroup.students)
+inline ::sample::ns::Student* StudentsGroup::add_students() {
+  // @@protoc_insertion_point(field_add:sample.ns.StudentsGroup.students)
   return _internal_add_students();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::samplenamespace::student::Student >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::sample::ns::Student >&
 StudentsGroup::students() const {
-  // @@protoc_insertion_point(field_list:samplenamespace.studentgroup.StudentsGroup.students)
+  // @@protoc_insertion_point(field_list:sample.ns.StudentsGroup.students)
   return students_;
 }
 
@@ -261,8 +261,8 @@ StudentsGroup::students() const {
 
 // @@protoc_insertion_point(namespace_scope)
 
-}  // namespace studentgroup
-}  // namespace samplenamespace
+}  // namespace ns
+}  // namespace sample
 
 // @@protoc_insertion_point(global_scope)
 
