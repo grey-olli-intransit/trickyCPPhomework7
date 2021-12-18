@@ -1,0 +1,7 @@
+syntax="proto3";
+import "Student.proto";
+package sample.ns;
+
+message StudentsGroup{
+  repeated sample.ns.Student students = 1;
+}
